@@ -1,7 +1,7 @@
 {
-  "name": "template-npmjs",
-  "version": "0.0.2",
-  "description": "Template to create a new npmjs lib",
+  "name": "fictum",
+  "version": "0.0.1",
+  "description": "fictum lib",
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && tsc -b tsconfig.build.json",
@@ -24,18 +24,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leal32b/template-npmjs.git"
+    "url": "git+https://github.com/leal32b/fictum.git"
   },
   "keywords": [
-    "template",
-    "npmjs"
+    "fictum"
   ],
   "author": "leal32b",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leal32b/template-npmjs/issues"
+    "url": "https://github.com/leal32b/fictum/issues"
   },
-  "homepage": "https://github.com/leal32b/template-npmjs#readme",
+  "homepage": "https://github.com/leal32b/fictum#readme",
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.23",
