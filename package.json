@@ -1,6 +1,6 @@
 {
   "name": "fictum",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "fictum lib",
   "main": "dist/index.js",
   "scripts": {

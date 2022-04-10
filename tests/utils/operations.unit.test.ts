@@ -9,9 +9,9 @@ describe('Operations', () => {
         { value: 'item3', type: 'y' }
       ]
       const filter = { type: 'x' }
-      const chosen = sut.oneOf(array, filter)
+      const result = sut.oneOf(array, filter)
 
-      expect(array).toContain(chosen)
+      expect(array).toContain(result)
     })
   })
 })

@@ -8,16 +8,16 @@ describe('Fictum', () => {
   describe('locale', () => {
     it('should set a new locale', () => {
       const localeToBe = 'pt_BR'
-      const locale = sut.locale('pt-BR')
+      const result = sut.locale('pt-BR')
 
-      expect(locale).toEqual(localeToBe)
+      expect(result).toEqual(localeToBe)
     })
 
     it('should get the locale if no param is provided', () => {
       const localeToBe = 'en'
-      const locale = sut.locale()
+      const result = sut.locale()
 
-      expect(locale).toEqual(localeToBe)
+      expect(result).toEqual(localeToBe)
     })
   })
 })

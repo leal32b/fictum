@@ -6,35 +6,35 @@ describe('Helpers', () => {
       const codeInput = ['en', 'pt_BR']
 
       codeInput.forEach(code => {
-        const codeOutput = sut.adjustLangCode(code)
+        const result = sut.adjustLangCode(code)
 
-        expect(codeOutput).toBe(code)
+        expect(result).toBe(code)
       })
     })
 
     it('should adjust the code if it has "-" in it', () => {
       const codeInput = 'pt-BR'
       const codeToBe = 'pt_BR'
-      const codeOutput = sut.adjustLangCode(codeInput)
+      const result = sut.adjustLangCode(codeInput)
 
-      expect(codeOutput).toBe(codeToBe)
+      expect(result).toBe(codeToBe)
     })
 
     it('should adjust the case of code', () => {
       const codeInput = 'PT-br'
       const codeToBe = 'pt_BR'
-      const codeOutput = sut.adjustLangCode(codeInput)
+      const result = sut.adjustLangCode(codeInput)
 
-      expect(codeOutput).toBe(codeToBe)
+      expect(result).toBe(codeToBe)
     })
 
     it('should return default if the code does not exist or is invalid', () => {
       const codeInput = ['wrong_code', 'lang']
 
       codeInput.forEach(code => {
-        const codeOutput = sut.adjustLangCode(code)
+        const result = sut.adjustLangCode(code)
 
-        expect(codeOutput).toBe('en')
+        expect(result).toBe('en')
       })
     })
 
@@ -42,9 +42,9 @@ describe('Helpers', () => {
       const codeInput = ['en*', '99']
 
       codeInput.forEach(code => {
-        const codeOutput = sut.adjustLangCode(code)
+        const result = sut.adjustLangCode(code)
 
-        expect(codeOutput).toBe('en')
+        expect(result).toBe('en')
       })
     })
   })
@@ -52,11 +52,11 @@ describe('Helpers', () => {
   describe('random', () => {
     it('should return a random number between 0 and limit', () => {
       const limit = 9
-      const rndNumber = sut.random(limit)
+      const result = sut.random(limit)
 
-      expect(rndNumber).toBeGreaterThanOrEqual(0)
-      expect(rndNumber).toBeLessThanOrEqual(limit)
-      expect(Number.isInteger(rndNumber)).toBeTruthy()
+      expect(result).toBeGreaterThanOrEqual(0)
+      expect(result).toBeLessThanOrEqual(limit)
+      expect(Number.isInteger(result)).toBeTruthy()
     })
   })
 
@@ -64,10 +64,10 @@ describe('Helpers', () => {
     it('should filter an array based on the passed filter', () => {
       const array = [{ value: 1, type: 'x' }, { value: 2, type: 'y' }]
       const filter = { type: 'y' }
-      const filteredArray = sut.filterArray(array, filter)
+      const result = sut.filterArray(array, filter)
 
-      expect(filteredArray.length).toBe(1)
-      expect(filteredArray[0]).toEqual(array[1])
+      expect(result.length).toBe(1)
+      expect(result[0]).toEqual(array[1])
     })
   })
 })
