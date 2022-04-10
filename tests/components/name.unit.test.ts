@@ -12,10 +12,10 @@ describe('Name', () => {
 
     it('should return a random firstName for the given gender', () => {
       const firstNames = locale.en.name.firstName
-      const firstName = sut.firstName({ gender: 'F' })
+      const firstName = sut.firstName({ gender: 'f' })
 
       expect(firstNames).toContain(firstName)
-      expect(firstName.gender).toEqual('F')
+      expect(firstName.gender).toEqual('f')
     })
   })
 })
