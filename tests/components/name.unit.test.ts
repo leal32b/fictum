@@ -4,27 +4,37 @@ import * as locale from '../../src/locale'
 describe('Name', () => {
   describe('firstName', () => {
     it('should return a random firstName', () => {
-      const firstNames = locale.en.name.firstName
-      const firstName = sut.firstName()
+      const { firstName } = locale.en.name
+      const result = sut.firstName()
 
-      expect(firstNames).toContain(firstName)
+      expect(firstName.find(e => e.value === result)).toBeTruthy()
     })
 
     it('should return a random firstName for the given gender', () => {
-      const firstNames = locale.en.name.firstName
-      const firstName = sut.firstName({ gender: 'f' })
+      const { firstName } = locale.en.name
+      const result = sut.firstName({ gender: 'f' })
 
-      expect(firstNames).toContain(firstName)
-      expect(firstName.gender).toEqual('f')
+      expect(firstName.find(e => e.value === result && e.gender === 'f')).toBeTruthy()
     })
   })
 
   describe('lastName', () => {
     it('should return a random lastName', () => {
-      const lastNames = locale.en.name.lastName
-      const lastName = sut.lastName()
+      const { lastName } = locale.en.name
+      const result = sut.lastName()
 
-      expect(lastNames).toContain(lastName)
+      expect(lastName.find(e => e.value === result)).toBeTruthy()
+    })
+  })
+
+  describe('fullName', () => {
+    it('should return a random fullName', () => {
+      const { firstName, lastName } = locale.en.name
+      const result = sut.fullName()
+      const [resultFirstName, resultLastName] = result.split(' ')
+
+      expect(firstName.find(e => e.value === resultFirstName)).toBeTruthy()
+      expect(lastName.find(e => e.value === resultLastName)).toBeTruthy()
     })
   })
 })

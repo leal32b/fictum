@@ -1,22 +1,21 @@
 import * as locale from '../locale'
 import { oneOf } from '../utils/operations'
 
-type Name = {
-  value: string
-}
-
-type FirstName = Name & {
-  gender: string
-}
-
-export const firstName = (filter = {}): FirstName => {
+export const firstName = (filter = {}): string => {
   const { firstName } = locale[locale.lang.code].name
 
-  return oneOf(firstName, filter)
+  return oneOf(firstName, filter).value
 }
 
-export const lastName = (): Name => {
+export const lastName = (): string => {
   const { lastName } = locale[locale.lang.code].name
 
-  return oneOf(lastName)
+  return oneOf(lastName).value
+}
+
+export const fullName = (): string => {
+  const resultFirstName = firstName()
+  const resultLastName = lastName()
+
+  return `${resultFirstName} ${resultLastName}`
 }
