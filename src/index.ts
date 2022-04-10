@@ -14,4 +14,4 @@ const fictum = {
   name
 }
 
-export default fictum
+export = fictum
