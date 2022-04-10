@@ -27,7 +27,15 @@
     "url": "git+https://github.com/leal32b/fictum.git"
   },
   "keywords": [
-    "fictum"
+    "fictum",
+    "fake",
+    "faker",
+    "data",
+    "generator",
+    "test",
+    "mock",
+    "fixtures",
+    "random"
   ],
   "author": "leal32b",
   "license": "MIT",
