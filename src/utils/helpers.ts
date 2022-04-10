@@ -20,3 +20,7 @@ export const adjustLangCode = (code: string): string => {
 
   return adjustedCode
 }
+
+export const random = (limit: number): number => {
+  return Math.floor(Math.random() * limit)
+}
