@@ -48,4 +48,15 @@ describe('Helpers', () => {
       })
     })
   })
+
+  describe('random', () => {
+    it('should return a random number between 0 and limit', () => {
+      const limit = 9
+      const rndNumber = sut.random(limit)
+
+      expect(rndNumber).toBeGreaterThanOrEqual(0)
+      expect(rndNumber).toBeLessThanOrEqual(limit)
+      expect(Number.isInteger(rndNumber)).toBeTruthy()
+    })
+  })
 })
