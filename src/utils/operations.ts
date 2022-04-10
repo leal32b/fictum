@@ -1,7 +1,12 @@
-import { random } from '@/utils/helpers'
+import { filterArray, random } from '../utils/helpers'
 
-export const oneOf = (array: any[]): any => {
-  const index = random(array.length)
+type Value = {
+  value: any
+}
 
-  return array[index]
+export const oneOf = (array: Value[], filter = {}): any => {
+  const filteredArray = filterArray(array, filter)
+  const index = random(filteredArray.length)
+
+  return filteredArray[index]
 }
