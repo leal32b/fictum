@@ -10,7 +10,13 @@ type FirstName = Name & {
 }
 
 export const firstName = (filter = {}): FirstName => {
-  const firstName = locale[locale.lang.code].name.firstName
+  const { firstName } = locale[locale.lang.code].name
 
   return oneOf(firstName, filter)
+}
+
+export const lastName = (): Name => {
+  const { lastName } = locale[locale.lang.code].name
+
+  return oneOf(lastName)
 }

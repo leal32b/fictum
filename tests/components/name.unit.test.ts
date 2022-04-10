@@ -18,4 +18,13 @@ describe('Name', () => {
       expect(firstName.gender).toEqual('f')
     })
   })
+
+  describe('lastName', () => {
+    it('should return a random lastName', () => {
+      const lastNames = locale.en.name.lastName
+      const lastName = sut.lastName()
+
+      expect(lastNames).toContain(lastName)
+    })
+  })
 })
