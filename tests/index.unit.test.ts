@@ -1,5 +1,23 @@
-import { Greeter } from '@/index'
+import sut from '../src'
 
-test('My Greeter', () => {
-  expect(Greeter('John')).toBe('Hello John')
+describe('Fictum', () => {
+  beforeEach(() => {
+    sut.locale('en')
+  })
+
+  describe('locale', () => {
+    it('should set a new locale', () => {
+      const localeToBe = 'pt_BR'
+      const locale = sut.locale('pt-BR')
+
+      expect(locale).toEqual(localeToBe)
+    })
+
+    it('should get the locale if no param is provided', () => {
+      const localeToBe = 'en'
+      const locale = sut.locale()
+
+      expect(locale).toEqual(localeToBe)
+    })
+  })
 })
