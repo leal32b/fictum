@@ -1,4 +1,4 @@
-import * as sut from '@/utils/helpers'
+import * as sut from '../../src/utils/helpers'
 
 describe('Helpers', () => {
   describe('adjustLangCode', () => {
@@ -57,6 +57,17 @@ describe('Helpers', () => {
       expect(rndNumber).toBeGreaterThanOrEqual(0)
       expect(rndNumber).toBeLessThanOrEqual(limit)
       expect(Number.isInteger(rndNumber)).toBeTruthy()
+    })
+  })
+
+  describe('filterArray', () => {
+    it('should filter an array based on the passed filter', () => {
+      const array = [{ value: 1, type: 'x' }, { value: 2, type: 'y' }]
+      const filter = { type: 'y' }
+      const filteredArray = sut.filterArray(array, filter)
+
+      expect(filteredArray.length).toBe(1)
+      expect(filteredArray[0]).toEqual(array[1])
     })
   })
 })
