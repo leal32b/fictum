@@ -1,4 +1,4 @@
-import * as locale from '../locale'
+import * as locale from '@/locale'
 
 const adjustLangCode = (code: string): string => {
   const [lang, country] = code.replace('-', '_').split('_')

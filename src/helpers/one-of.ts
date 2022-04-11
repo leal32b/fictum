@@ -1,5 +1,5 @@
-import filterArray from './filter-array'
-import random from './random'
+import filterArray from '@/helpers/filter-array'
+import random from '@/helpers/random'
 
 const oneOf = (array: any[], filter = {}): any => {
   const filteredArray = filterArray(array, filter)

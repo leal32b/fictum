@@ -1,4 +1,4 @@
-import random from '../../src/helpers/random'
+import random from '@/helpers/random'
 
 describe('random', () => {
   it('should return a random number between 0 and limit', () => {

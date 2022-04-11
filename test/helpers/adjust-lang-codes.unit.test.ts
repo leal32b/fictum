@@ -1,4 +1,4 @@
-import adjustLangCode from '../../src/helpers/adjust-lang-code'
+import adjustLangCode from '@/helpers/adjust-lang-code'
 
 describe('adjustLangCode', () => {
   it('should return the same code it there is nothing to adjust', () => {

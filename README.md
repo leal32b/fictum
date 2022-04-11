@@ -1,5 +1,5 @@
 # Fictum
-Fictum is a fake data generator designed to aid (in a simple and dynamic way) in testing.
+Fictum is a fake data generator designed to aid (in a simple and dynamic way) testing.
 
 ## Installation
 > npm install fictum

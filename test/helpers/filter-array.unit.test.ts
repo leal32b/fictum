@@ -1,4 +1,4 @@
-import filterArray from '../../src/helpers/filter-array'
+import filterArray from '@/helpers/filter-array'
 
 describe('filterArray', () => {
   it('should filter an array based on the passed filter', () => {

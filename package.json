@@ -4,7 +4,7 @@
   "description": "fictum lib",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rimraf dist && tsc -b tsconfig.build.json",
+    "build": "rimraf dist && ttsc -b tsconfig.build.json",
     "build:watch": "npm run build -- -w",
     "eslint": "eslint 'src/**' --fix",
     "prepare": "npm run build",
@@ -58,6 +58,8 @@
     "lint-staged": "^12.3.7",
     "rimraf": "^3.0.2",
     "ts-jest": "^27.1.4",
-    "typescript": "^4.6.3"
+    "ttypescript": "^1.5.13",
+    "typescript": "^4.6.3",
+    "typescript-transform-paths": "^3.3.1"
   }
 }

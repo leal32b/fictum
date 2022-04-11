@@ -1,4 +1,4 @@
-import oneOf from '../../src/helpers/one-of'
+import oneOf from '@/helpers/one-of'
 
 describe('Operations', () => {
   describe('oneOf', () => {
