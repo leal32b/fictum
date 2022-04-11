@@ -13,6 +13,6 @@ module.exports = {
   testMatch: ['**/*.unit.test.ts', '**/*.integration.test.ts'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
-    '^~/(.*)$': '<rootDir>/tests/$1'
+    '^~/(.*)$': '<rootDir>/test/$1'
   }
 }
