@@ -10,7 +10,7 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run eslint",
     "preversion": "npm run eslint",
-    "version": "npm run eslint && git add -A src",
+    "version": "git add -A src",
     "postversion": "git push && git push --tags",
     "test": "jest --passWithNoTests --no-cache --runInBand --silent --noStackTrace --collectCoverage=false",
     "test:verbose": "jest --passWithNoTests --no-cache --runInBand",
