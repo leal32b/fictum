@@ -1,5 +1,5 @@
+import oneOf from '../helpers/one-of'
 import * as locale from '../locale'
-import { oneOf } from '../utils/operations'
 
 export const firstName = (filter = {}): string => {
   const { firstName } = locale[locale.lang.code].name

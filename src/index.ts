@@ -1,6 +1,6 @@
 import * as name from './components/name'
+import adjustLangCode from './helpers/adjust-lang-code'
 import * as locale from './locale'
-import { adjustLangCode } from './utils/helpers'
 
 const fictum = {
   locale (code: string = null): string {

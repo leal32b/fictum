@@ -1,4 +1,4 @@
-import * as sut from '../../src/utils/operations'
+import oneOf from '../../src/helpers/one-of'
 
 describe('Operations', () => {
   describe('oneOf', () => {
@@ -9,7 +9,7 @@ describe('Operations', () => {
         { value: 'item3', type: 'y' }
       ]
       const filter = { type: 'x' }
-      const result = sut.oneOf(array, filter)
+      const result = oneOf(array, filter)
 
       expect(array).toContain(result)
     })

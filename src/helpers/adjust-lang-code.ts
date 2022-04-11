@@ -1,6 +1,6 @@
 import * as locale from '../locale'
 
-export const adjustLangCode = (code: string): string => {
+const adjustLangCode = (code: string): string => {
   const [lang, country] = code.replace('-', '_').split('_')
   const adjustedCountry = country ? '_' + country.toUpperCase() : ''
   const adjustedCode = lang.toLowerCase() + adjustedCountry
@@ -21,12 +21,4 @@ export const adjustLangCode = (code: string): string => {
   return adjustedCode
 }
 
-export const random = (limit: number): number => {
-  return Math.floor(Math.random() * limit)
-}
-
-export const filterArray = (array: any[], filter: any): any[] => {
-  return array.filter(array => {
-    return Object.keys(filter).every(key => array[key] === filter[key])
-  })
-}
+export default adjustLangCode
