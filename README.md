@@ -1,6 +1,11 @@
 # Fictum
 Fictum is a fake data generator designed to aid (in a simple and dynamic way) testing.
 
+![image](https://img.shields.io/github/license/leal32b/fictum?style=flat-square)
+![image](https://img.shields.io/npm/v/fictum?style=flat-square)
+![image](https://img.shields.io/npm/dw/fictum?style=flat-square)
+![image](https://img.shields.io/github/issues/leal32b/fictum?style=flat-square)
+
 ## Installation
 > npm install fictum
 
