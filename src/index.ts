@@ -1,4 +1,4 @@
-import name from '@/components/name'
+import person from '@/components/person'
 import adjustLangCode from '@/helpers/adjust-lang-code'
 import { lang } from '@/locale'
 
@@ -11,7 +11,7 @@ const fictum = {
     return lang.code
   },
 
-  name
+  person
 }
 
 export = fictum
