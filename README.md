@@ -27,21 +27,21 @@ import fictum from 'fictum'
 fictum.locale('pt-BR')
 
 // Generate a random first name
-const name = fictum.name.firstName()
+const name = fictum.person.firstName()
 
 // Apply filters
-const fixedGenderName = fictum.name.firstName({ gender: 'f' })
+const fixedGenderName = fictum.person.firstName({ gender: 'f' })
 ```
 
 ## Components
 
 ```typescript
-// Name
+// Person
 
-fictum.name.firstName()                                    // 'Steven'
-fictum.name.firstName({ gender: 'f' })                     // 'Ashley'
-fictum.name.lastName()                                     // 'Smith'
-fictum.name.fullName()                                     // 'Linda Brown'
-fictum.name.fullName({ gender: 'm' })                      // 'Charles Williams'
-fictum.name.fullName({ format: 'lastName, firstName' })    // 'Jackson, Paul'
+fictum.person.firstName()                                  // 'Steven'
+fictum.person.firstName({ gender: 'f' })                   // 'Ashley'
+fictum.person.lastName()                                   // 'Smith'
+fictum.person.fullName()                                   // 'Linda Brown'
+fictum.person.fullName({ gender: 'm' })                    // 'Charles Williams'
+fictum.person.fullName({ format: 'lastName, firstName' })  // 'Jackson, Paul'
 ```
