@@ -1,4 +1,6 @@
-export const firstName = [
+import { FirstName } from '@/types/person'
+
+export const firstName: FirstName[] = [
   { value: 'James', gender: 'm' },
   { value: 'Robert', gender: 'm' },
   { value: 'John', gender: 'm' },

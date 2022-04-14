@@ -5,7 +5,7 @@ import { Format, Gender } from '@/types/person'
 
 type Opt = { gender?: Gender, format?: Format }
 
-const fullName = (opt: Opt = null): any => {
+const fullName = (opt: Opt = null): string => {
   const gender = opt?.gender ? { gender: opt.gender } : null
   const format: Format = opt?.format ? opt.format : 'firstName lastName'
   const values = {

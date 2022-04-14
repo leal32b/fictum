@@ -5,8 +5,8 @@ type Values = {
 const replaceInFormat = (format: string, values: Values): string => {
   let result = format
 
-  Object.entries(values).forEach(([key, value]) => {
-    result = result.replace(key, value as any)
+  Object.entries(values).forEach(([key, value]: [string, string]) => {
+    result = result.replace(key, value)
   })
 
   return result

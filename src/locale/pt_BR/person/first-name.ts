@@ -1,4 +1,6 @@
-const firstName = [
+import { FirstName } from '@/types/person'
+
+const firstName: FirstName[] = [
   { value: 'José', gender: 'm' },
   { value: 'João', gender: 'm' },
   { value: 'Antônio', gender: 'm' },

@@ -1,4 +1,6 @@
-const lastName = [
+import { LastName } from '@/types/person'
+
+const lastName: LastName[] = [
   { value: 'Silva' },
   { value: 'Santos' },
   { value: 'Oliveira' },

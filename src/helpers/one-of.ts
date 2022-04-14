@@ -1,9 +1,11 @@
 import filterArray from '@/helpers/filter-array'
 import random from '@/helpers/random'
 
-type Filter = { [key: string]: any }
+type Element = {
+  [key: string]: any
+}
 
-const oneOf = (array: any[], filter: Filter = null): any => {
+const oneOf = (array: Element[], filter: Element = null): Element => {
   if (filter) {
     array = filterArray(array, filter)
   }
