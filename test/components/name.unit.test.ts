@@ -1,4 +1,4 @@
-import * as name from '@/components/name'
+import name from '@/components/name'
 import * as locale from '@/locale'
 
 describe('Name', () => {

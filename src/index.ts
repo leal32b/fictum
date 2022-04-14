@@ -1,4 +1,4 @@
-import * as name from '@/components/name'
+import name from '@/components/name'
 import adjustLangCode from '@/helpers/adjust-lang-code'
 import { lang } from '@/locale'
 
