@@ -1,11 +1,16 @@
 import filterArray from '@/helpers/filter-array'
 import random from '@/helpers/random'
 
-const oneOf = (array: any[], filter = {}): any => {
-  const filteredArray = filterArray(array, filter)
-  const index = random(filteredArray.length)
+type Filter = { [key: string]: any }
 
-  return filteredArray[index]
+const oneOf = (array: any[], filter: Filter = null): any => {
+  if (filter) {
+    array = filterArray(array, filter)
+  }
+
+  const index = random(array.length)
+
+  return array[index]
 }
 
 export default oneOf
