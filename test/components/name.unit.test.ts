@@ -55,7 +55,7 @@ describe('Name', () => {
       const { firstName, lastName } = locale.en.name
 
       for (let i = 0; i < 10; i++) {
-        const result = name.fullName({ format: '[lastName], [firstName]' })
+        const result = name.fullName({ format: 'lastName, firstName' })
         const [resultLastName, resultFirstName] = result.split(', ')
 
         expect(firstName.find(e => e.value === resultFirstName)).toBeTruthy()

@@ -4,8 +4,8 @@ import * as locale from '@/locale'
 
 type Gender = 'f' | 'm'
 
-const defaultFormat = '[firstName] [lastName]'
-type Format = typeof defaultFormat | '[lastName] [firstName]' | '[lastName], [firstName]'
+const defaultFormat = 'firstName lastName'
+type Format = typeof defaultFormat | 'lastName firstName' | 'lastName, firstName'
 
 const firstName = (opt: { gender: Gender } = null): string => {
   const { firstName } = locale[locale.lang.code].name

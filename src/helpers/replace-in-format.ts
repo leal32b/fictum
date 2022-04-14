@@ -1,12 +1,12 @@
 type Values = {
-  [key: string]: string | number
+  [key: string]: string
 }
 
 const replaceInFormat = (format: string, values: Values): string => {
   let result = format
 
   Object.entries(values).forEach(([key, value]) => {
-    result = result.replace(`[${key}]`, value as any)
+    result = result.replace(key, value as any)
   })
 
   return result

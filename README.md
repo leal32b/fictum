@@ -38,10 +38,10 @@ const fixedGenderName = fictum.name.firstName({ gender: 'f' })
 ```typescript
 // Name
 
-fictum.name.firstName()                                        // 'Steven'
-fictum.name.firstName({ gender: 'f' })                         // 'Ashley'
-fictum.name.lastName()                                         // 'Smith'
-fictum.name.fullName()                                         // 'Linda Brown'
-fictum.name.fullName({ gender: 'm' })                          // 'Charles Williams'
-fictum.name.fullName({ format: '[lastName], [firstName]' })    // 'Jackson, Paul'
+fictum.name.firstName()                                    // 'Steven'
+fictum.name.firstName({ gender: 'f' })                     // 'Ashley'
+fictum.name.lastName()                                     // 'Smith'
+fictum.name.fullName()                                     // 'Linda Brown'
+fictum.name.fullName({ gender: 'm' })                      // 'Charles Williams'
+fictum.name.fullName({ format: 'lastName, firstName' })    // 'Jackson, Paul'
 ```
