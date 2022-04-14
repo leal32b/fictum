@@ -1,1 +1,5 @@
-export * from './values/name'
+import person from './person'
+
+export {
+  person
+}

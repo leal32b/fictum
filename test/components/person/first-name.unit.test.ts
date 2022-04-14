@@ -1,8 +1,8 @@
 import firstName from '@/components/person/first-name'
-import * as locale from '@/locale'
+import getValues from '@/helpers/get-values'
 
 describe('firstName', () => {
-  const { firstName: firstNameValues } = locale.en.name
+  const { firstName: firstNameValues } = getValues('person')
 
   it('should return a random firstName', () => {
     const result = firstName()

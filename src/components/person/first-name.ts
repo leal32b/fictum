@@ -2,8 +2,10 @@ import getValues from '@/helpers/get-values'
 import oneOf from '@/helpers/one-of'
 import { Gender } from '@/types/person'
 
-const firstName = (opt: { gender: Gender } = null): string => {
-  const { firstName } = getValues('name')
+type Opt = { gender: Gender }
+
+const firstName = (opt: Opt = null): string => {
+  const { firstName } = getValues('person')
 
   return oneOf(firstName, opt).value
 }
