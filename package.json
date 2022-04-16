@@ -13,12 +13,12 @@
     "eslint": "eslint 'src/**' --fix",
     "test": "jest --passWithNoTests --no-cache --runInBand --silent --noStackTrace --collectCoverage=false",
     "test:verbose": "jest --passWithNoTests --no-cache --runInBand",
-    "test:unit": "npm test -- -c jest.config.js --watch",
+    "test:watch": "npm test -- --watch",
     "test:staged": "npm test -- --findRelatedTests tests",
     "test:ci": "npm test -- --coverage"
   },
   "files": [
-    "dist/**/*"
+    "dist"
   ],
   "repository": {
     "type": "git",

@@ -4,10 +4,13 @@ Fictum is a fake data generator designed to aid (in a simple and dynamic way) te
 ![image](https://img.shields.io/github/license/leal32b/fictum?style=flat-square)
 ![image](https://img.shields.io/npm/v/fictum?style=flat-square)
 ![image](https://img.shields.io/npm/dw/fictum?style=flat-square)
+![image](https://img.shields.io/codecov/c/gh/leal32b/fictum?style=flat-square)
+![image](https://img.shields.io/circleci/build/github/leal32b/fictum/main?style=flat-square)
 ![image](https://img.shields.io/github/issues/leal32b/fictum?style=flat-square)
-
 ## Installation
-> npm install fictum
+```bash
+npm install fictum
+```
 
 ## Usage
 
@@ -45,3 +48,6 @@ fictum.person.fullName()                                   // 'Linda Brown'
 fictum.person.fullName({ gender: 'm' })                    // 'Charles Williams'
 fictum.person.fullName({ format: 'lastName, firstName' })  // 'Jackson, Paul'
 ```
+
+## License
+MIT
