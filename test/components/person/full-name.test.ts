@@ -31,14 +31,4 @@ describe('fullName', () => {
       expect(lastNameValues.find(e => e.value === resultLastName)).toBeTruthy()
     }
   })
-
-  it('should return a random fullName for the given gender and format', () => {
-    for (let i = 0; i < 10; i++) {
-      const result = fullName({ gender: 'f', format: 'lastName, firstName' })
-      const [resultLastName, resultFirstName] = result.split(', ')
-
-      expect(firstNameValues.find(e => e.value === resultFirstName)).toBeTruthy()
-      expect(lastNameValues.find(e => e.value === resultLastName)).toBeTruthy()
-    }
-  })
 })
