@@ -36,7 +36,7 @@ jobs:
           at: ~/repo
       - run: npm run build
       - codecov/upload:
-          file: './coverage/clover.xml'
+          file: './coverage/lcov.info'
       - persist_to_workspace:
           root: ~/repo
           paths:
